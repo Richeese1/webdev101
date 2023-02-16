@@ -1,0 +1,39 @@
+<html lang="en">
+
+<body>
+ 
+    
+<button type="button" onclick="addOne()">+1</button>
+<button type="button" onclick="minusOne()">-1</button>
+<p id="output" value=0>0</p>
+
+<script>
+    function addOne(){
+        var component = document.getElementById("output");
+        var num = parseInt(component.getAttribute("value"));
+
+        num = num + 1;
+
+        component.setAttribute("value", num);
+        component.innerHTML = num;
+
+    }
+
+    function minusOne(){
+        var component = document.getElementById("output");
+        var num = parseInt(component.getAttribute("value"));
+
+        num = num - 1;
+
+        component.setAttribute("value", num);
+        component.innerHTML = num;
+
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
